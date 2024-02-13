@@ -4,7 +4,7 @@
 
 Dette er en enkel JavaScript-applikasjon for å registrere kjøp av kinobilletter.
 
-# vordan bruke
+# Hvordan bruke
 
 1. Åpne `index.html` i en nettleser.
 2. Velg film, fyll ut antall billetter og personlig informasjon.
