@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestilling av kinobilletter</title>
+</head>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+
+<div>
+    <label for="film">Velg film:</label>
+    <select id="film">
+        <option value="" disabled selected>Velg film</option>
+        <option value="film1">Film 1</option>
+        <option value="film2">Film 2</option>
+        <option value="film3">Film 3</option>
+    </select>
+    <span id="filmError" style="color: red;"></span>
+</div> <br>
+
+<div>
+    <label for="antall">Antall:</label>
+    <input type="number" id="antall" style="width: 50px">
+    <span id="antallError" style="color: red; "></span>
+</div> <br>
+
+<div>
+    <label for="fornavn">Fornavn:</label>
+    <input type="text" id="fornavn">
+    <span id="fornavnError" style="color: red;"></span>
+</div>
+
+<div>
+    <label for="etternavn">Etternavn:</label>
+    <input type="text" id="etternavn">
+    <span id="etternavnError" style="color: red;"></span>
+</div>
+
+<div>
+    <label for="telefon">Telefonnummer:</label>
+    <input type="text" id="telefon">
+    <span id="telefonError" style="color: red;"></span>
+</div>
+
+<div>
+    <label for="epost">E-post:</label>
+    <input type="email" id="epost">
+    <span id="epostError" style="color: red;"></span>
+</div>
+
+<button onclick="kjopBillett()">Kjøp billett</button>
+<button onclick="slettAlleBilletter()">Slett alle billetter</button>
+
+<h2>Alle billetter</h2>
+<ul id="billettListe"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
